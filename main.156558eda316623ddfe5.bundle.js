@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8f4c16967ec3abf236ff";
+/******/ 	var hotCurrentHash = "156558eda316623ddfe5";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -895,7 +895,7 @@ function register(config) {
     }
 
     window.addEventListener('load', function () {
-      var swUrl = "".concat(process.env.BASE_URL, "/src/service-worker.js");
+      var swUrl = "".concat(process.env.BASE_URL, "/service-worker.js");
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
@@ -1289,4 +1289,4 @@ service_worker["a" /* register */]();
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.8f4c16967ec3abf236ff.bundle.js.map
+//# sourceMappingURL=main.156558eda316623ddfe5.bundle.js.map
