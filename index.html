@@ -4,10 +4,19 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>PWA testing</title>
+    <link rel="canonical" href="https://shadowfalls.github.io/pwa/" />
 <link href="1.css" rel="stylesheet"><link href="main.css" rel="stylesheet"></head>
 
 <body>
     <div id="root"></div>
-<script type="text/javascript" src="vendors~main.156558eda316623ddfe5.bundle.js"></script><script type="text/javascript" src="main.156558eda316623ddfe5.bundle.js"></script></body>
+    <script>
+    // register ServiceWorker, remember to use absolute path!
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('/pwa/service-worker.js', {scope: '/pwa/'})
+    }
+    
+    // --- Application code here ---
+    </script>
+<script type="text/javascript" src="vendors~main.5dc526c231983ef46aa8.bundle.js"></script><script type="text/javascript" src="main.5dc526c231983ef46aa8.bundle.js"></script></body>
 
 </html>
