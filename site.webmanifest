@@ -5,7 +5,7 @@
   "background_color": "#ffffff",
   "display": "fullscreen",
   "scope": "/",
-  "start_url": "/#/",
+  "start_url": "/pwa/",
   "orientation": "portrait",
   "icons": [
     {
