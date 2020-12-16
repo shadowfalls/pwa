@@ -7,7 +7,7 @@ export default function Login({
     onLoginSuccess,
 }) {
 
-    const [password, setPassword] = useState('aishu1');
+    const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
 
     const onLogin = () => {

@@ -7,13 +7,10 @@ import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
+// Check that service workers are supported
 if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
     window.addEventListener('load', () => {
-        if (navigator.serviceWorker)
-            navigator.serviceWorker.register('/sw.js').then(registration => {
-                console.log('SW registered: ', registration);
-            }).catch(registrationError => {
-                console.log('SW registration failed: ', registrationError);
-            });
+        navigator.serviceWorker.register('/sw.js');
     });
 }

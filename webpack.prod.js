@@ -108,19 +108,19 @@ module.exports = {
             crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
             icons: [
                 {
-                    src: path.resolve('src/assets/icon.jpg'),
+                    src: path.resolve('src/assets/icon.png'),
                     sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
                     destination: path.join('icons', 'ios'),
                     ios: true
                 },
                 {
-                    src: path.resolve('src/assets/icon.jpg'),
+                    src: path.resolve('src/assets/icon.png'),
                     size: 512,
                     destination: path.join('icons', 'ios'),
                     ios: 'startup'
                 },
                 {
-                  src: path.resolve('src/assets/icon.jpg'),
+                  src: path.resolve('src/assets/icon.png'),
                   sizes: [36, 48, 72, 96, 144, 192, 512],
                   destination: path.join('icons', 'android')
                 }
