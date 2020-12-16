@@ -1,0 +1,82 @@
+{
+  "icons": [
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_512x512.a8e65a11116b12294da5a1bbeb2b7c74.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_192x192.66fbc6a09aeda61893be916f2c1a7903.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_144x144.fdd5e7cb77a07bc258e5a7cfbbe4e681.jpeg",
+      "sizes": "144x144",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_96x96.ca5724b0c756d25f52cca23be97b6f6c.jpeg",
+      "sizes": "96x96",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_72x72.52f800526787e73dc0b02ec12d5d9585.jpeg",
+      "sizes": "72x72",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_48x48.97587b05f4762eb43920d19f8526f2c7.jpeg",
+      "sizes": "48x48",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/android/icon_36x36.d54e50c85895a342069da9980a33c3eb.jpeg",
+      "sizes": "36x36",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_512x512.a8e65a11116b12294da5a1bbeb2b7c74.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_512x512.a8e65a11116b12294da5a1bbeb2b7c74.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_384x384.123dbcf2c6ab2299547179d7c41a5835.jpeg",
+      "sizes": "384x384",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_256x256.ede112a667c83dc97eea592fe5ffd879.jpeg",
+      "sizes": "256x256",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_192x192.66fbc6a09aeda61893be916f2c1a7903.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_128x128.bbc890280321fd0d86bafb4a83adb753.jpeg",
+      "sizes": "128x128",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://shadowfalls.github.io/pwa/icons/ios/icon_96x96.ca5724b0c756d25f52cca23be97b6f6c.jpeg",
+      "sizes": "96x96",
+      "type": "image/jpeg"
+    }
+  ],
+  "name": "Aishu",
+  "short_name": "Aishu",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Aishu",
+  "background_color": "#0072FF",
+  "theme_color": "#0072FF"
+}
