@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import * as serviceWorker from './service-worker';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
 
-const wrapper = document.getElementById("root");
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
+ReactDOM.render(<App />, document.getElementById('root'));
 
-
-serviceWorker.register();
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        if (navigator.serviceWorker)
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('SW registered: ', registration);
+            }).catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}

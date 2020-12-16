@@ -7,5 +7,6 @@ node_modules/
 **/play_inspiration_images/
 .env
 .git/
+dist/
 .env*
 **/.dynamodb

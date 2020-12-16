@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path');
 
 module.exports = {
     module: {
@@ -30,9 +30,9 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: {
+                    loader: 'url-loader'
+                }
             }
         ]
     },
@@ -51,33 +51,19 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         // remove this during production
-        new webpack.HotModuleReplacementPlugin(),
-        // new UglifyJsPlugin({ sourceMap: true })
+        new webpack.HotModuleReplacementPlugin()
     ],
-    optimization: {
-        splitChunks: {
-            chunks: "all",
-            minSize: 0
-        },
-        minimize: true,
-        minimizer: [
-            // new UglifyJsPlugin({
-            //     uglifyOptions: {
-            //         compress: {
-            //             /*(...)*/
-            //         },
-            //         output: {
-            //             /*(...)*/
-            //         }
-            //     }
-            // })
-        ]
-    },
     mode: "development",
+    // devServer: {
+    //     historyApiFallback: true,
+    //     contentBase: './',
+    //     hot: true,
+    //     port: process.env.PORT
+    // },
     devServer: {
-        historyApiFallback: true,
-        contentBase: './',
-        hot: true
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: process.env.PORT
     },
     devtool: 'source-map'
 };
